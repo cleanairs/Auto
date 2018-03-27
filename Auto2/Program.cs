@@ -15,8 +15,8 @@ namespace KlassenDefinieren
             Auto meinAuto = new Auto("Porsche");
             
 
-            meinAuto.alterInJahren = 13;
-            deinAuto.alterInJahren = 1;
+            meinAuto.AlterInJahren = 13;
+            deinAuto.AlterInJahren = 1;
             
             Console.WriteLine("Mein Auto fährt aktuell {0} km/h.", meinAuto.sageAktuelleGeschwindikeit());
             Console.WriteLine("Dein Auto fährt aktuell {0} km/h.", deinAuto.sageAktuelleGeschwindikeit());

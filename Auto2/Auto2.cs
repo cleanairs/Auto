@@ -4,23 +4,32 @@ namespace KlassenDefinieren
 {
     public class Auto
     {
-        private string marke;
-        public int alterInJahren;
         private int aktuelleGeschwindigkeit;
+        private string marke;
 
-        public Auto(string autoMarke)
+        public Auto(string marke)
         {
-            if (autoMarke == "Porsche")
-            {
-                marke = autoMarke;
-            }
-            else
-            {
-                marke = "Nicht unterstützt!!";
-            }
-
-            alterInJahren = 0;
+            Marke = marke;
+            AlterInJahren = 0;
             aktuelleGeschwindigkeit = 0;
+        }
+
+        public int AlterInJahren { get; set; }
+                
+        public string Marke
+        {
+            get { return marke; }
+            set
+            {
+                if (value == "Porsche")
+                {
+                    marke = value;
+                }
+                else
+                {
+                    marke = "Nicht unterstützt!!!";
+                }
+            }
         } 
 
         public void BeschleunigeAuf100KmH()
